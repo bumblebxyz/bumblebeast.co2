@@ -1,0 +1,43 @@
+[debug] [2017-10-10T22:50:09.247Z] ----------------------------------------------------------------------
+[debug] [2017-10-10T22:50:09.249Z] Command:       /usr/local/Cellar/node/8.4.0/bin/node /usr/local/bin/firebase serve
+[debug] [2017-10-10T22:50:09.249Z] CLI Version:   3.13.1
+[debug] [2017-10-10T22:50:09.249Z] Platform:      darwin
+[debug] [2017-10-10T22:50:09.249Z] Node Version:  v8.4.0
+[debug] [2017-10-10T22:50:09.250Z] Time:          Tue Oct 10 2017 15:50:09 GMT-0700 (PDT)
+[debug] [2017-10-10T22:50:09.250Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-10T22:50:09.259Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-10T22:50:09.259Z] > authorizing via signed-in user
+[debug] [2017-10-10T22:50:09.260Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-10T22:50:09.260Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/fgfWVerkWkFtUj_Zf_5Dg3RhZHQc2PL2KpbbXUaP2P3H4tiKbYM_qWpM6rUOrE8w',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Oct 10 2017 15:50:09 GMT-0700 (PDT)
+[debug] [2017-10-10T22:50:09.457Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-10T22:50:09.470Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bumbleb-182122  
+ Tue Oct 10 2017 15:50:09 GMT-0700 (PDT)
+[debug] [2017-10-10T22:50:10.001Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-10T22:50:10.002Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bumbleb-182122/tokens  
+ Tue Oct 10 2017 15:50:10 GMT-0700 (PDT)
+[debug] [2017-10-10T22:50:10.404Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/michaelmuzio/Desktop/websitev3'...
+[info] 
+[debug] [2017-10-10T22:50:10.406Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bumbleb-182122  
+ Tue Oct 10 2017 15:50:10 GMT-0700 (PDT)
+[debug] [2017-10-10T22:50:10.898Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-10T22:50:10.899Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1074760668629/clients/_:getWebAppConfig  
+ Tue Oct 10 2017 15:50:10 GMT-0700 (PDT)
+[debug] [2017-10-10T22:50:11.397Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-10T22:50:11.411Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/serve/hosting.js:34:17)
+    at Object.onceWrapper (events.js:314:30)
+    at emitNone (events.js:105:13)
+    at Server.emit (events.js:207:7)
+    at emitListeningNT (net.js:1349:10)
+    at _combinedTickCallback (internal/process/next_tick.js:135:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[error] 
+[error] Error: An unexpected error has occurred.
